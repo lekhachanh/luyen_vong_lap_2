@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tien_goc = parseFloat(prompt('mời bạn nhập số tiền gốc đã vay'));
+    const lai_xuat = 0.1;
+    let thang = parseFloat(prompt ('Mời bạn nhập vào số tháng đã vay tính từ ngày bắt đầu vay'));
+        tien_lai_thang = (tien_goc*lai_xuat*30)/365;
+    let laiPhaiDong;
+    for (let i = 0;i<=thang; i++) {
+        laiPhaiDong=tien_lai_thang*i + tien_goc;
+    }
+    document.write('số tiền cả gốc lẫn lãi phải trả là: '+ laiPhaiDong);
+</script>
+</body>
+</html>
